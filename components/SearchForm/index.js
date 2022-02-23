@@ -19,7 +19,7 @@ const SearchForm = ({setData, setLoandig, setError}) => {
     }
     setError(false);
 
-    const dataFetch = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/es/${filter}`);
+    const dataFetch = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${filter}`);
     const dataJson = await dataFetch.json();
     setLoandig(false);
     setData(dataJson[0]);
@@ -35,7 +35,7 @@ const SearchForm = ({setData, setLoandig, setError}) => {
           <input 
             id="search" 
             type="text"
-            placeholder="Escribe una palabra"
+            placeholder="Write a word"
             onChange={e => setFilter(e.target.value)}  
           />
         </div>
