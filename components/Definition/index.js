@@ -20,24 +20,6 @@ const Definition = ({definition}) => {
           <p>{definition.example}</p>
         </div>
       )}
-
-      {definition.synonyms.lengh > 0 && (
-        <div>
-          <Subtitle>
-            Sinonimos:
-          </Subtitle>
-          <p>{definition.synonyms[0]}</p>
-        </div>
-      )}
-
-      {definition.antonyms.lengh > 0 && (
-        <div>
-          <Subtitle>
-            Antonimos:
-          </Subtitle>
-          <p>{definition.antonyms[0]}</p>
-        </div>
-      )}
     </BoxDefinition>
   )
 }

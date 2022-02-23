@@ -4,7 +4,6 @@ import { Container, Title } from './styles';
 import PropTypes from 'prop-types';
 
 const Card = ({data}) => {
-
   if(!data.meanings){
     return null;
   }
