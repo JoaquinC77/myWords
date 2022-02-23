@@ -22,7 +22,7 @@ export default function Home() {
             <div className="row justify-content-center">
               <div className="col-xs-10 col-sm-10 col-md-7 col-lg-7">
                 <div className="d-flex justify-content-center py-3">
-                  <h1>Mi Diccionario</h1>
+                  <h1>My Dictionary</h1>
                 </div>
                 <div className="container-form mb-5">
                   <SearchForm 
@@ -37,7 +37,7 @@ export default function Home() {
               <div className="col-sm-10">
                 {loandig && (<Spinner />)}
                 {error ? (
-                  <div className="error">Debes ingresar al menos una palabra</div>
+                  <div className="error">You must enter at least one word</div>
                 ) : (
                   <Card data={data} />
                 )}
